@@ -31,7 +31,8 @@ function App() {
                             <br />
                             <p className="time">
                                 <i>
-                                    This Resume was built using React.js and CSS
+                                    This Resume was built using React.js and
+                                    CSS. Code is available on my Github
                                 </i>
                             </p>
                         </div>
@@ -42,35 +43,35 @@ function App() {
                             <h3>Skills</h3>
                             <ul>
                                 <li>
-                                    <b>C++</b>
+                                    <b>C++ (2+ years)</b>
                                     <Squares n={4} />
                                 </li>
                                 <li>
-                                    <b>C</b>
+                                    <b>Python (2+ years)</b>
                                     <Squares n={3} />
                                 </li>
                                 <li>
-                                    <b>Python</b>
-                                    <Squares n={3} />
-                                </li>
-                                <li>
-                                    <b>Javascript</b>
+                                    <b>Javascript (2+ years)</b>
                                     <Squares n={4} />
                                 </li>
                                 <li>
-                                    <b>React.js</b>
+                                    <b>React.js (1 years)</b>
                                     <Squares n={4} />
                                 </li>
                                 <li>
-                                    <b>CSS</b>
+                                    <b>CSS (2+ years)</b>
                                     <Squares n={4} />
                                 </li>
                                 <li>
-                                    <b>Node.js</b>
+                                    <b>Node.js (1 years)</b>
                                     <Squares n={4} />
                                 </li>
                                 <li>
-                                    <b>SQL</b>
+                                    <b>Express.js (1 years)</b>
+                                    <Squares n={4} />
+                                </li>
+                                <li>
+                                    <b>SQL (1 years)</b>
                                     <Squares n={3} />
                                 </li>
                             </ul>
@@ -84,13 +85,9 @@ function App() {
                                     <b>Spanish</b>
                                     <Squares n={5} />
                                 </li>
-                                <li>
-                                    <b>Italian</b>
-                                    <Squares n={2} />
-                                </li>
                             </ul>
-                            <h3>Referees</h3>
-                            <h4>Ariff Nordin</h4>
+                            <h3>References</h3>
+                            <h4>Ariff Nordin (Web-App Developer)</h4>
                             <ul>
                                 <li>
                                     <div className="center-content-vertical">
@@ -113,6 +110,55 @@ function App() {
                                     </div>
                                 </li>
                             </ul>
+                            <h4>Germin Chan (Savings App Developer)</h4>
+                            <ul>
+                                <li>
+                                    <div className="center-content-vertical">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                                        </svg>
+
+                                        <span
+                                            style={{
+                                                marginLeft: "20px",
+                                            }}
+                                        >
+                                            Germincjk@gmail.com
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h4>
+                                Sarune Dakkadan (Algorithm and Data Structures
+                                Analyst
+                            </h4>
+                            <ul>
+                                <li>
+                                    <div className="center-content-vertical">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                                        </svg>
+
+                                        <span
+                                            style={{
+                                                marginLeft: "20px",
+                                            }}
+                                        >
+                                            sarunedakkadan@gmail.com
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </GridItem>
                     <GridItem pos={[1, 5, 2, 7]}>
@@ -127,6 +173,13 @@ function App() {
                             <Hr />
                             <h3>PROFILE</h3>
                             <Hr />
+                            <p>
+                                Dedicated Computer Science student at the
+                                University of Adelaide, proficient in Web-Dev
+                                and Artificial Intelligence. Eaget to secure an
+                                entry-level possition in AI, or Web-Development.
+                            </p>
+
                             <h3>EDUCATION</h3>
                             <Hr />
                             <h4>
@@ -134,22 +187,63 @@ function App() {
                                 University of Adelaide
                             </h4>
                             <p className="time">2022-12 — 2020-02</p>
-                            <p>Text</p>
+                            <p>
+                                Majoring in Artificial Intelligence. Important
+                                Courses that I've Taken: Web & Database
+                                Computing, Computer Systems, Algorithm & Data
+                                Structure Analysis, Parallel and Distributed
+                                Computing
+                            </p>
                             <h4>Highschool - The Grange School (Chile)</h4>
                             <p className="time">2018-12 — 2009-03</p>
-                            <p>Text</p>
+                            <p>
+                                Participated in the 2016 National Robotics
+                                Tournament in a group of five students competing
+                                against 20 Chilean high schools.
+                            </p>
+                            <p>
+                                I was the Bass Player for the school band for
+                                five years (2013-2018).
+                            </p>
                             <h3>PROFESSIONAL/PERSONAL PROJECTS</h3>
                             <Hr />
-                            <h4>Dungeons & Dragons Web Application</h4>
+                            <h4>
+                                Dungeons & Dragons Web Application (Personal
+                                Project, React.js, Node.js, Express.js, SQL,
+                                Javascript)
+                            </h4>
                             <p className="time">
                                 Current — 2021-06 (~10 months and counting)
                             </p>
-                            <p>Text</p>
-                            <h4>Covid-19 Contact Tracing Web Application</h4>
+                            <p>
+                                I wanted to make a Web App for one of my
+                                favorite hobbies, so this is a personal project
+                                that I do in my free time. I learned a lot
+                                making this project, I learned React.js by
+                                myself, and the Web App is a large single-page
+                                React app. This is an extensive app that i wish
+                                to complete. The repository is private on
+                                Github. I do plan to make the Web App public in
+                                the future.
+                            </p>
+                            <h4>
+                                Covid-19 Contact Tracing Web Application (Uni
+                                Project, Express.js, Node.js, SQL, Javascript)
+                            </h4>
                             <p className="time">
                                 2021-06 — 2021-04 (2 months){" "}
                             </p>
-                            <p>Text</p>
+                            <p>
+                                This was the first time I did any project
+                                related to Web Development, and I learned a lot
+                                of important skills in this course (Web &
+                                Database Computing). My tasks were: Doing around
+                                half of the HTML pages, Handling half of the CSS
+                                and organizing the CSS sheets. Doing most of the
+                                backend in Express.js, specifically serving
+                                dynamic content, handling sessions, user-login
+                                and user-creation.
+                            </p>
                             <h3>EMPLOYMENT HISTORY</h3>
                             <Hr />
                             <h4>None</h4>
