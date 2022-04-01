@@ -139,6 +139,32 @@ ul {
     margin-bottom: 10px;
 }
 
+.btn {
+    border: solid;
+    border-radius: 25px;
+    border-width: thin;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn {
+    margin-right: 20px;
+}
+
+.btn:hover {
+    background-color: #646a83;
+    color: #e4e4e4;
+}
+
 .ulnormal {
     list-style-type: disc;
     padding-left: 40px;

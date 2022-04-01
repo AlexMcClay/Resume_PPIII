@@ -1,6 +1,140 @@
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
+    const [resume, setResume] = useState(false);
+    const [coverLetter, setCoverLetter] = useState(false);
+
+    if (resume) {
+        return <Resume />;
+    }
+    if (coverLetter) {
+        return <CL />;
+    }
+
+    return (
+        <div style={{ height: "60vh" }}>
+            <div className="center-content-flex" style={{ height: "100%" }}>
+                <button className="btn" onClick={() => setResume(true)}>
+                    Resume
+                </button>{" "}
+                <button className="btn" onClick={() => setCoverLetter(true)}>
+                    Cover Letter
+                </button>
+            </div>
+        </div>
+    );
+}
+
+function CL() {
+    return (
+        <div className="center-content-flex">
+            <div style={{ height: "100vh", width: "100vw" }}>
+                <div className="grid">
+                    <GridItem pos={[1, 5, 1, 2]}>
+                        <div
+                            style={{
+                                borderRight: "solid",
+                                borderWidth: "2px",
+                                borderColor: "#646a83",
+                                height: "80%",
+                                paddingLeft: "40px",
+                            }}
+                        >
+                            <p>Adealide, Australia</p>
+                            <br />
+                            <p className="time">1st of April, 2022</p>
+                            <br />
+                            <br />
+                            <br />
+                            <p>To David McKay,</p>
+                            <h3>Frontend Developer for Frisk</h3>
+                        </div>
+                    </GridItem>
+                    <GridItem pos={[5, 7, 1, 2]}>
+                        <Contact />
+                    </GridItem>
+                    <GridItem pos={[1, 6, 2, 7]}>
+                        <div
+                            style={{
+                                paddingLeft: "40px",
+                                height: "80%",
+                            }}
+                        >
+                            <p>
+                                I am writing to apply for the position of
+                                Fron-end Developer at Frisk. I am currently
+                                studying in my third year of my Bachelor of
+                                Computer Science, Majoring in Artificial
+                                Intelligence at the University of Adelaide, and
+                                with an expected completion date of December
+                                2022.
+                            </p>
+                            <br />
+                            <p>
+                                I find the idea of joining a growing company
+                                interesting, as I feel I can provide the
+                                experience and software quality that you are
+                                looking for. I also hope to learn from the other
+                                team members so we can have a stronger bond and
+                                work better together as a team.
+                            </p>
+                            <br />
+                            <p>
+                                I am extremely familiar with all the
+                                technologies that you have listed in the
+                                application. I am currently working on a
+                                Full-Stack web app that uses React, Node.js,
+                                Express, and SQL in my free time (the repository
+                                is private currently, I do plan to make the app
+                                public in the future). Furthermore, I've also
+                                worked on a Covid-19 Contact Tracing Web
+                                Application in which I was a full-stack
+                                developer. I am also extremely proficient in
+                                HTML, CSS, and Javascript as I have used them
+                                for most of my career.I am fully confident in my
+                                knowledge of those technologies, and others that
+                                could be an asset to your company.
+                            </p>
+                            <br />
+                            <p>
+                                I am a keen and fast learner, so I should be
+                                able to handle any tasks that you throw at me. I
+                                learned React.js by myself in my free time to
+                                develop the Full-Stack app in my free time that
+                                I mentioned. In the Covid-19 Contact Tracing
+                                App, I managed to lead the team and assign tasks
+                                to the other members to work efficiently and I
+                                personally made sure they understood what they
+                                had to do so that we could deliver the app on
+                                time.
+                            </p>
+                            <br />
+                            <p>
+                                I always know that I can improve in some
+                                aspects, and I believe that I am a perfect fit
+                                for your company in which I can grow as a person
+                                and provide quality software for the company.
+                            </p>
+                            <br />
+                            <p>
+                                I look forward to your response regarding my
+                                application.
+                            </p>
+                            <br />
+                            <p>Yours Sincerely,</p>
+                            <br />
+                            <p>
+                                <i>Alex McClay</i>
+                            </p>
+                        </div>
+                    </GridItem>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Resume() {
     return (
         <div className="center-content-flex">
             <div style={{ height: "100vh", width: "100vw" }}>
@@ -176,8 +310,8 @@ function App() {
                             <p>
                                 Dedicated Computer Science student at the
                                 University of Adelaide, proficient in Web-Dev
-                                and Artificial Intelligence. Eaget to secure an
-                                entry-level possition in AI, or Web-Development.
+                                and Artificial Intelligence. Eager to secure an
+                                entry-level position in AI, or Web-Development.
                             </p>
 
                             <h3>EDUCATION</h3>
